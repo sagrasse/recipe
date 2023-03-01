@@ -1,0 +1,625 @@
+/*-- FONT IMPORT --*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;700&display=swap');
+/*-- COLORS
+#0D0D0D = black
+#F2F2F2 = white
+#7ABFBF = darker blue
+rgba(122, 191, 191, .5) = lighter blue
+#EB5428 = orange
+--*/
+html {
+    font-family: 'Bebas Neue', cursive;
+    background-color: rgba(122, 191, 191, 0.5);
+}
+
+body {
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color: #F2F2F2;
+    justify-content: center;
+}
+
+dt {
+    font-weight: bold;
+    text-align: center;
+}
+
+dd {
+    text-align: center;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+span {
+    font-family: 'Bebas Neue', cursive;
+}
+
+p, dt, dd, li, nav, input {
+    font-family: 'Montserrat', sans-serif;
+}
+
+aside h2 {
+    font-size: 30px;
+    text-align: center;
+    margin-top: -40px;
+    margin-bottom: 24px;
+}
+
+/*-----MENU STYLING-----*/
+.menu {
+    position: absolute;
+    border: solid #EB5428 2px;
+    padding: 0;
+    height: 600px;
+    background-color: #fff;
+    justify-content: center;
+}
+
+.menu svg {
+    display: block;
+    margin: 20px 20px auto 20px;
+}
+
+.menu li {
+    list-style-type: none;
+    color: #EB5428;
+    text-align: center;
+}
+
+.menu img {
+    width: 31.45%;
+    margin-left: 84px;
+    margin-right: 10px;
+    float: left;
+}
+
+.menu a {
+    color: #EB5428;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.menu a:hover {
+    background-color: #EB5428;
+    color: white;
+}
+
+
+
+#details {
+    clear: both;
+    background-color: #0D0D0D;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+
+#details h2 {
+    font-size: 25px;
+    text-align: center;
+    padding-top: 5px;
+}
+
+#details h2, #details dl, #details dt, #details dd {
+    color: #7ABFBF;
+}
+
+#details dd {
+    font-weight: 300;
+}
+
+.taco-img img {
+    width: 400px;
+    height: auto;
+    float: left;
+}
+
+/*-----MAIN NAV BAR-----*/
+#mainnav {
+    gap: 30px;
+    margin-left: 30px;
+    width: 90px;
+    justify-content: center;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    justify-content: center;
+    background-color: white;
+    width: 1280px;
+    height: 104px;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, .2);
+}
+nav li {
+    float: left;
+}
+
+li a {
+    font-family: 'Bebas Neue', sans-serif;
+    text-decoration: none;
+    color: #EB5428;
+    display: block;
+    padding: 5px;
+    text-align: center;
+}
+
+nav a[href="#home"] span {
+    display: none;
+}
+
+nav h3 {
+    display: none;
+}
+
+nav img {
+    width: 60px;
+    display: block;
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+
+nav ul {
+    text-align: center;
+    list-style-type: none;
+}
+
+nav span {
+    text-align: center;
+    margin-left: 3px;
+    margin-top: 10px;
+}
+
+.home {
+    background-color: #EB5428;
+    position: absolute;
+    left: 0;
+    padding: 20px 10px;
+}
+
+.search {
+    position: absolute;
+    top: 160px;
+    left: 40%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.search h4 {
+    display: none;
+}
+
+.search svg {
+    background-color: #EB5428;
+    stroke: white;
+    padding: 1px;
+    transition: all 0.2s ease-in-out;
+}
+
+.search svg:hover {
+    background-color: #fff;
+    stroke: #EB5428;
+}
+
+.search a {
+    padding: 0px;
+    margin: 0px;
+}
+
+input {
+    font-size: 16px;
+    border: solid #EB5428 1px;
+    width: 200px;
+    height: 40px;
+}
+
+.user {
+    position: absolute;
+    right: 0px;
+    padding: 10px;
+    transition: all 0.2s ease-in-out;
+    height: 85px;
+    padding: 10px;
+}
+
+.user svg {
+    display: block;
+}
+
+.user span {
+    text-align: center;
+    color: black;
+    transition: all 0.5s ease-in-out;
+}
+
+.user:hover {
+    background-color: #EB5428;
+}
+
+.user:hover span {
+    color: white;
+}
+
+.user:hover .icon-tabler-user-circle {
+    stroke: white;
+}
+
+.icon-tabler-user-circle {
+    transition: all 0.5s ease-in-out 0.2s;
+}
+
+.meals {
+    height: 104px;
+    width: 80px;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+}
+
+.meals:hover {
+    background-color: #EB5428;
+}
+
+.meals a {
+    transition: all 0.2s ease-in-out;
+}
+
+.meals:hover a {
+    color: white;
+}
+
+#ingredients {
+    margin-left: 30px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+#ingredients h3 {
+    font-size: 25px;
+    margin-left: 80px;
+    margin-top: 10px;
+}
+
+#ingredients li {
+    list-style-type: disc;
+    line-height: 30px;
+}
+
+
+#directions h3 {
+    font-size: 25px;
+    text-align: center;
+    margin-top: 10px;
+    margin-right: 140px;
+
+}
+
+#directions li {
+    list-style-type: normal;
+    line-height: 40px;
+}
+
+.dishes-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: start;
+    gap: 10px;
+}
+
+.dishes-grid img {
+    width: 128px;
+    padding-bottom: 20px;
+}
+
+.dishes-grid h4 {
+    display: inline-block;
+    position: absolute;
+    margin-left: 10px;
+}
+
+.dishes-grid p {
+    display: inline-block;
+    position: absolute;
+    margin-top: 25px;
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+#sidedishes {
+    background-color: #7ABFBF;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+}
+
+#sidedishes h3 {
+    font-size: 25px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.contact {
+    display: flex;
+    position: relative;
+    right: -680px;
+    gap: 80px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+#contact h3, #contact h4 {
+    display: none;
+}
+
+.contact a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #EB5428;
+    text-decoration: none;
+}
+
+.contact li {
+    text-align: center;
+    margin-right: 10px;
+    padding: 10px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.contact li:hover {
+    background-color: #EB5428;
+}
+
+.contact svg {
+    transition: all 0.2s ease-in-out;
+}
+
+.contact span {
+    transition: all 0.2s ease-in-out;
+}
+
+.contact li:hover svg {
+    stroke: white;
+}
+
+.contact li:hover span {
+    color: white;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.contact-info h4 {
+    display: none;
+}
+
+.contact img {
+    width: 15%;
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-bottom: 30px;
+}
+
+.contact p {
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+/*----MEDIA SCREENS ----------*/
+@media screen and (max-width: 1024px) {
+    body {
+        width: 768px;
+        max-width: 768px;
+    }
+
+    .menu {
+        flex-direction: row;
+        height: 100px;
+        background-color: rgba(255, 255, 255, 0.5);
+        border: none;
+        gap: 120px;
+        width: 768px;
+        align-items: center;
+    }
+
+    .menu li {
+        margin-left: 15px;
+        margin-bottom: 25px;
+    }
+
+    #sidedishes {
+        display: block;
+        text-align: center;
+    }
+    
+    #details h3, #details dl, #details dt, #details dd {
+        color: black;
+    }
+
+    nav {
+        width: 768px;
+        height: 182px;
+    }
+
+    nav img {
+        width: 50px;
+    }
+
+    nav span {
+        margin-left: 5px;
+        align-items: center;
+    }
+
+    .nav-food {
+        height: 90px;
+        width: 70px;
+    }
+
+    .nav-flex {
+        justify-content: center;
+        margin-left: 5px;
+        margin-top: 80px;
+    }
+
+    .home {
+        padding: 5px 5px;
+        position: absolute;
+        top: 0;
+    }
+
+    .user {
+        top: -20px;
+        padding: 5px;
+        padding-bottom: 0;
+    }
+
+    .search {
+        top: 15px;
+        left: 430px;
+    }
+
+    aside h2 {
+        text-align: start;
+        margin-left: 10px;
+    }
+
+    .tacos {
+        width: 768px;
+        margin: 0;
+    }
+
+    #sidedishes {
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: start;
+        gap: 10px;
+    }
+
+    #sidedishes img {
+        width: 128px;
+        padding-bottom: 20px;
+    }
+
+    #sidedishes h4 {
+        display: inline-block;
+        position: absolute;
+        margin-left: 10px;
+    }
+
+    #sidedishes p {
+        display: inline-block;
+        position: absolute;
+        margin-top: 25px;
+        margin-left: 10px;
+        font-size: 14px;
+    }
+
+    .rating {
+        display: inline;
+        padding-top: 25px;
+    }
+
+    .contact-info {
+        flex-direction: column-reverse;
+        align-content: flex-start;
+    }
+
+    .contact-info img {
+        margin-left: 20px;
+    }
+
+    .contact-info p {
+        text-align: center;
+        margin-left: 20px;
+        margin-top: -20px;
+    }
+
+    .contact {
+        right: -445px;
+        gap: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        width: 414px;
+        max-width: 414px;
+    }
+
+    aside h2 {
+        text-align: center;
+        margin: 0;
+    }
+
+    .menu {
+        width: 414px;
+        gap: 0;
+        background-color: #F2F2F2;
+    }
+
+    .search {
+        top: 95px;
+        left: 80px;
+    }
+    nav {
+        width: 414px;
+        height: 73px;
+    }
+
+    .home {
+        left: 84px;
+        right: 84px;
+        padding: 5px 84px;
+    }
+    .tacos {
+        width: 414px;
+    }
+
+    .user {
+        top: -14px;
+        right: 12px;
+    }
+
+    #sidedishes {
+        text-align: left;
+    }
+
+    #ingredients {
+        grid-template-columns: 1fr;
+    }
+
+    #ingredients h3 {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    #directions h3 {
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .directions li {
+        margin-left: 35px;
+        ;
+    }
+
+    .directions p {
+        margin-left: 8px;
+        width: 352px;
+    }
+
+    #sidedishes {
+        grid-template-columns: 1fr;
+    }
+}
